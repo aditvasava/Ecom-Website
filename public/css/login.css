@@ -1,0 +1,207 @@
+.main
+{
+  width:750px;
+  height:570px;
+  position:relative;
+  top:70px;
+  left:80px;
+  float:left;
+  box-shadow:0px 0px 11px rgba(0,0,0,0.6);
+  background-color:white;
+}
+
+body
+{
+background-image:linear-gradient(to bottom right,#A9E2F5,#CCFFBF);
+}
+
+a{
+  text-decoration: none;
+}
+.frm
+{
+  padding-left:140px;
+  padding-top:20px;
+}
+#log
+{
+  font-size:37px;
+  letter-spacing:3px;
+  position:relative;
+  text-transform: uppercase;
+  left:275px;
+  top:30px;
+}
+
+#bth
+{
+  position:relative;
+  font-size:18px;
+  top:80px;
+  left:570px;
+  text-decoration:none;
+  border:none;
+  border-bottom:1px solid blue;
+  width:150px;
+  height:40px;
+  text-align:center;
+  padding:10px 0px;
+  font-size:16px;
+  transition-duration: 0.5s;
+}
+
+#bth:hover {
+  border-bottom:1px solid green;
+}
+/*---------------------------- Side Div----------------------------*/
+.imag
+{
+  width:300px;
+  height:570px;
+  float:right;
+  position:relative;
+  top:-500px;
+  right:205px;
+  box-shadow:0px 0px 11px rgba(0,0,0,0.6);
+  background-image:linear-gradient(to bottom right,#94D7F2 0%, #4453A6 51%, #363859 100%);
+}
+
+.nh
+{
+  color:white;
+  position:relative;
+  top:100px;
+  text-align: center;
+  font-size:28px;
+  letter-spacing:2px;
+}
+
+.content
+{
+  color:white;
+  position:relative;
+  top:130px;
+  text-align: center;
+  letter-spacing:1px;
+}
+
+.bu
+{
+  position:relative;
+  top:200px;
+  left:65px;
+}
+
+#regis:link,#regis:visited
+{
+flex: 1 1 auto;
+background-image:linear-gradient(to bottom right,#023859 0%, #71D99E 51%, #023859 100%);
+color:black;
+padding:10px 20px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+border-radius:30px;
+width:160px;
+background-size:200% auto;
+transition:0.7s;
+}
+
+#regis:hover, #regis:active
+{
+background-position: right center;
+color:white;
+}
+
+/*-----------------------Input Field-------------------------------*/
+
+.wrapus
+{
+  width:500px;
+  padding:30px;
+  /*box-shadow:0px 0px 10px rgba(0,0,0,0.1);*/
+}
+
+.wrapus .inpt
+{
+  height:50px;
+  width:400px;
+  position:relative;
+}
+
+.wrapus .inpt input
+{
+  height:100%;
+  width:100%;
+  border:none;
+  font-size:16px;
+  border-bottom:1px solid black;
+  outline:none;
+}
+
+.inpt input:focus ~ label,.inpt input:valid ~ label
+{
+  transform: translateY(-30px);
+  font-size:13px;
+  color:#4158d0;
+}
+
+.wrapus .inpt label
+{
+  position:absolute;
+  bottom:10px;
+  left:0;
+  color:grey;
+  pointer-events:none;
+  transition:0.5s;
+}
+
+.wrapus .inpt .underline
+{
+  position: absolute;
+  bottom:0px;
+  height:2px;
+  width:100%;
+}
+
+.inpt .underline:before
+{
+  position: absolute;
+  background:#4158d0;
+  content:"";
+  height:100%;
+  width:100%;
+  transform:scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.inpt input:focus ~ .underline:before,.inpt input:valid ~ .underline:before
+{
+  transform:scaleX(1);
+}
+
+/*----------------------- Login Button ----------------------------*/
+
+.btnn
+{
+flex: 1 1 auto;
+text-align:center;
+transition:0.5s;
+background-size:200% auto;
+color:#FFFFFF;
+border-radius:30px;
+width:200px;
+border:none;
+height:40px;
+background-image: linear-gradient(to right,#5EF796 0%,#2DA8B7 51%, #5EF796 100%);
+position: relative;
+top:15px;
+left:30px;
+font-size:16px;
+}
+
+.btnn:hover
+{
+background-position: right center;
+color:white;
+}
